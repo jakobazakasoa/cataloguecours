@@ -1,0 +1,54 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+    background: #f8f9fa;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header-logo {
+    width: 200px;
+    display: block;
+    margin: 0 auto 30px;
+}
+.section-title {
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    margin: 40px 0 30px;
+}
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+.course-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+.course-title {
+    color: #2c3e50;
+    margin: 0 0 5px;
+    font-size: 1.1em;
+}
+.course-level {
+    color: #7f8c8d;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+.course-tracks {
+    font-size: 0.85em;
+    color: #7f8c8d;
+    line-height: 1.4;
+}
+.track-line {
+    margin: 8px 0;
+}
+.finance { color: #27ae60; }
+.marketing { color: #2980b9; }
+.banque { color: #e67e22; }
+.admin { color: #8e44ad; }
