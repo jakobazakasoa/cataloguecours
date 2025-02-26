@@ -1,54 +1,222 @@
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    margin: 0;
-    padding: 30px;
-    background: #f8f9fa;
-}
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.header-logo {
-    width: 200px;
-    display: block;
-    margin: 0 auto 30px;
-}
-.section-title {
-    color: #2c3e50;
-    border-bottom: 3px solid #3498db;
-    padding-bottom: 10px;
-    margin: 40px 0 30px;
-}
-.course-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-}
-.course-card {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
-}
-.course-title {
-    color: #2c3e50;
-    margin: 0 0 5px;
-    font-size: 1.1em;
-}
-.course-level {
-    color: #7f8c8d;
-    font-size: 0.9em;
-    margin-bottom: 15px;
-}
-.course-tracks {
-    font-size: 0.85em;
-    color: #7f8c8d;
-    line-height: 1.4;
-}
-.track-line {
-    margin: 8px 0;
-}
-.finance { color: #27ae60; }
-.marketing { color: #2980b9; }
-.banque { color: #e67e22; }
-.admin { color: #8e44ad; }
+        :root {
+            --primary: #2A5CAA;
+            --primary-dark: #1a3a6e;
+            --accent: #e63946;
+            --accent-dark: #d62839;
+            --light-bg: #f8f9fa;
+            --text-color: #343a40;
+            --heading-color: #2c3e50;
+            --card-bg: #ffffff;
+            --card-shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            margin: 0;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .header img {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px; /* Ajout d'un border radius pour adoucir le logo */
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: white; /* Assurer que le titre est bien blanc */
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: rgba(255, 255, 255, 0.9); /* Légèrement transparent pour un effet subtil */
+        }
+        .section-title {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin: 40px 0 30px;
+        }
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Cartes un peu plus larges */
+            gap: 30px; /* Plus d'espace entre les cartes */
+            padding: 30px 0;
+        }
+
+        .course-card {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px; /* Plus de border radius pour un aspect moderne */
+            box-shadow: 0 5px 15px var(--card-shadow); /* Ombre plus prononcée et douce */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition plus douce pour l'ombre */
+            border: 1px solid #eee; /* Ajout d'une bordure légère */
+        }
+
+        .course-card:hover {
+            transform: translateY(-8px); /* Soulèvement plus important au survol */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Ombre plus forte au survol */
+        }
+
+        .course-title {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.6em; /* Titre de cours plus grand */
+        }
+
+        .course-level {
+            color: var(--accent);
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        .course-content p {
+            line-height: 1; /* ? Et cette valeur pour le contenu des cours */
+            margin-bottom: 15px; /* Plus d'espace entre les paragraphes */
+            color: var(--text-color); /* Couleur du texte uniformisée */
+        }
+
+        .course-content strong {
+            line-height: 1; /* ? Et cette valeur pour le contenu des cours */
+            font-weight: 600; /* "Objectifs" et "Résumé" en gras */
+            color: var(--heading-color); /* Légèrement plus foncé pour les titres dans les cartes */
+        }
+
+        .highlight-banner {
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            color: white;
+            text-align: center;
+            padding: 40px;
+            border-radius: 12px; /* Border radius plus important */
+            margin: 40px 0;
+            box-shadow: 0 5px 15px var(--card-shadow); /* Ombre pour le banner */
+        }
+
+        .highlight-banner h2 {
+            font-size: 2.2em;
+            margin-bottom: 15px;
+        }
+
+        .highlight-banner p {
+            font-size: 1.5rem;
+            margin: 15px 0 0;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.95); /* Blanc légèrement transparent */
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            border-radius: 12px; /* Border radius plus important */
+            margin-top: 60px; /* Plus de marge au-dessus */
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.08); /* Ombre légère en haut */
+        }
+
+        .contact-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .contact-section p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .contact-section a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-section a:hover {
+            color: var(--accent); /* Changement de couleur au hover pour un feedback visuel */
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .header {
+                padding: 40px 0;
+            }
+            .header img {
+                max-width: 150px;
+            }
+            .header h1 {
+                font-size: 2em;
+            }
+            .section-title {
+                font-size: 1.7em;
+                padding: 10px 20px;
+                margin: 40px auto 25px;
+            }
+            .course-grid {
+                grid-template-columns: 1fr; /* Empile les cartes sur petit écran */
+                gap: 20px;
+            }
+            .course-card {
+                padding: 20px;
+            }
+            .highlight-banner {
+                padding: 30px;
+            }
+            .highlight-banner h2 {
+                font-size: 1.8em;
+            }
+            .highlight-banner p {
+                font-size: 1.3rem;
+            }
+            .contact-section {
+                padding: 40px 20px;
+            }
+            .contact-section h2 {
+                font-size: 1.8em;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .header {
+                padding: 30px 0;
+            }
+            .header img {
+                max-width: 120px;
+            }
+            .header h1 {
+                font-size: 1.7em;
+            }
+            .header p {
+                font-size: 1em;
+            }
+            .section-title {
+                font-size: 1.5em;
+            }
+            .highlight-banner h2 {
+                font-size: 1.6em;
+            }
+            .highlight-banner p {
+                font-size: 1.2rem;
+            }
+            .contact-section h2 {
+                font-size: 1.6em;
+            }
+        }
