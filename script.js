@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
             {
                 title: "Outils de communication et de la présentation visuelle",
                 level: "Niveau L3",
-                image: "https://images.unsplash.com/photo-1551836022-8b6c0a0f2b0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+                image: "https://images.unsplash.com/photo-1546054454-aa26e2b734c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
                 objectives: [
                     "Communication professionnelle",
                     "Stratégie digitale",
