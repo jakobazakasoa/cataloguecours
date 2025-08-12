@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', function() {
             {
                 title: "PAO : Photoshop",
                 level: "Niveau M1",
-                image: "https://images.unsplash.com/photo-1543857778-c4a1a569e7bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1630&q=80",
+                image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1630&q=80",
                 objectives: [
                     "Fonctionnalités avancées de Photoshop",
                     "Création de supports professionnels",
@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function() {
             {
                 title: "IA et la prise de décision",
                 level: "Niveau M2",
-                image: "https://images.unsplash.com/photo-1677442135722-5f8ea49cec8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80",
+                image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80",
                 objectives: [
                     "Comprendre les fondamentaux de l'intelligence artificielle",
                     "Appliquer l'IA dans la résolution de problèmes décisionnels",
